@@ -1,16 +1,16 @@
 ---
 name: psychiatric-drug-weekly
-description: 每周收集全球最新获批/上市的精神类药物审批动态，包括FDA、NMPA、EMA等主流药监机构的优先审批与新药批准信息，并整理成飞书文档推送。
+description: 每月收集全球最新获批/上市的精神类药物审批动态，包括FDA、NMPA、EMA等主流药监机构的优先审批与新药批准信息，并整理成飞书文档推送。
 version: "1.0"
 author: Judy (朱迪)
 license: MIT
 ---
 
-# 🌈 每周精神药物审批速递 Skill (v1.0)
+# 🌈 每月精神药物审批速递 Skill (v1.1)
 
 ## 目标
 
-收集全球主要药监机构（FDA / NMPA / EMA）近一周内获批/上市的精神类药物，覆盖：
+收集全球主要药监机构（FDA / NMPA / EMA）近一个月内获批/上市的精神类药物，覆盖：
 - 抗抑郁药（Antidepressants）
 - 抗精神病药（Antipsychotics）
 - 抗焦虑药（Anxiolytics）
@@ -37,8 +37,8 @@ license: MIT
 
 ```bash
 NOW=$(date '+%Y-%m-%d')
-WEEK_AGO=$(date -d "7 days ago" '+%Y-%m-%d')
-echo "时间范围: $WEEK_AGO ~ $NOW"
+MONTH_AGO=$(date -d "1 month ago" '+%Y-%m-%d')
+echo "时间范围: $MONTH_AGO ~ $NOW"
 ```
 
 ---
@@ -152,7 +152,7 @@ done
 
 #### 5A · 飞书文档
 
-**标题**：`🌈 每周精神药物审批速递 · {YYYY-MM-DD}`
+**标题**：`🌈 每月精神药物审批速递 · {YYYY-MM-DD}`
 
 **文档结构**：
 ```
